@@ -80,9 +80,7 @@ class _ScanningEffectState extends State<ScanningEffect> with SingleTickerProvid
       children: [
         widget.child,
         CustomPaint(
-          painter: ScannerBorderPainter(
-            color: widget.borderLineColor,
-          ),
+          
         ),
        
         Padding(
