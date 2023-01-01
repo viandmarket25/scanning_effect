@@ -79,6 +79,11 @@ class _ScanningEffectState extends State<ScanningEffect> with SingleTickerProvid
       fit: StackFit.expand,
       children: [
         widget.child,
+        CustomPaint(
+          painter: ScannerBorderPainter(
+            color: widget.borderLineColor,
+          ),
+        ),
        
         Padding(
           padding: widget.scanningLinePadding,
